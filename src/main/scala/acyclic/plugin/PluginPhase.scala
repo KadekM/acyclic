@@ -33,6 +33,7 @@ class PluginPhase(val global: Global, cycleReporter: Seq[(Value, SortedSet[Int])
 
   def units = global.currentRun
                     .units
+                    .filter(!_.isJava)
                     .toSeq
                     .sortBy(_.source.content.mkString.hashCode())
 

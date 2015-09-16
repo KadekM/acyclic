@@ -3,11 +3,9 @@ organization  := "com.lihaoyi"
 
 name := "acyclic"
 
-version := "0.1.2"
+version := "0.1.3"
 
-scalaVersion  := "2.10.4"
-
-crossScalaVersions := Seq("2.10.4", "2.11.0")
+scalaVersion  := "2.11.7"
 
 libraryDependencies ++= Seq(
   "com.lihaoyi" %% "utest" % "0.1.4" % "test",
